@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Late Checkout Collection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+<img src="img/portada.png" class="cover">
+
+<h2>@youngmikoar</h2>
+
+<button onclick="abrirSobre()">
+
+  📦 ABRIR SOBRE
+
+</button>
+
+<div id="cartas"></div>
+
+<div id="mensaje"></div>
+
+<br>
+
+<a href="#collection" class="btn btn-primary">
+🃏 VER TODA LA COLECCIÓN
+</a>
+
+</a>
+
+</div>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Álbum de stickers</span>
+            <h1>Late Checkout Collection</h1>
+            <p>Descubre la colección inspirada en fan art, stickers y momentos especiales. Completa tu álbum con 20 stickers únicos.</p>
+            <a href="#collection" class="btn btn-primary">Ver colección</a>
+          </div>
+          <div class="hero-image">
+            <img src="img/portada.png" alt="Portada Late Checkout Collection" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23f7f4ef%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23686e76%22 font-family=%22Inter%2C sans-serif%22 font-size=%2236%22%3EPortada%3C/text%3E%3C/svg%3E'" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <span class="eyebrow">Sobre el álbum</span>
+            <h2>Más que stickers</h2>
+            <p>Late Checkout Collection es un homenaje visual para fans. Cada sticker está inspirado en un detalle especial del universo creativo y se presenta en un diseño limpio y moderno.</p>
+          </div>
+          <div class="about-image">
+            <img src="img/sobre.png" alt="Sobre Late Checkout Collection" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 500%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23f7f4ef%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23686e76%22 font-family=%22Inter%2C sans-serif%22 font-size=%2236%22%3ESobre%3C/text%3E%3C/svg%3E'" />
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" class="section collection-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Colección</span>
+            <h2>Stickers disponibles</h2>
+            <p>Explora los 20 stickers del álbum. Haz clic en cualquiera para verlo con más detalle.</p>
+          </div>
+          <div id="cardGallery" class="card-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Late Checkout Collection © 2026</p>
+        <p>Diseñado para mostrar tu álbum de stickers.</p>
+      </div>
+    </footer>
+
+    <div id="cardModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" data-close="true" aria-label="Cerrar galería">×</button>
+        <h3 id="modalTitle">Sticker</h3>
+        <div class="modal-content">
+          <img id="modalImage" src="" alt="Sticker ampliado" />
+          <p id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
